@@ -1,0 +1,31 @@
+body {
+	background-image: url("../images/star-fight.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+.container {
+	text-align: center;
+}
+
+h1, h2, p {
+	font-family: "Courier New", Courier, serif;
+	font-weight: bolder;
+	color: #fff;
+	padding: 20px 20px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+input {
+	padding: 8px 8px 40px;
+	background-color: #ec9;
+	border: 3px solid red;
+}
