@@ -1,31 +1,72 @@
+
 body {
-	background-image: url("../images/star-fight.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-
-}
-
-.container {
-	text-align: center;
-}
-
-h1, h2, p {
-	font-family: "Courier New", Courier, serif;
-	font-weight: bolder;
-	color: #fff;
-	padding: 20px 20px;
+	margins: 20px;
+	font-family: 'Courier New', Georgia, serif;
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 48px;
+	margin: 10px 0 10px 700px;
 }
 
 h2 {
-	font-size: 30px;
+	margin: 5px 0 5px 0px;
 }
 
-input {
-	padding: 8px 8px 40px;
-	background-color: #ec9;
-	border: 3px solid red;
+.game {
+	position: absolute;
+	background: url("../images/star-fight.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 950px;
+	width: 1800px;
+	border: 2px solid #000000;
+	padding: 20px;
 }
+
+.player {
+	background-color: #FFFFFF;
+	position: relative;
+	display: inline-block;
+	height: 115px;
+	width: 150px;
+	border: 1px solid green;
+	text-align: center;
+}
+
+.name {
+	font: 10px;
+	margin: 2px;
+	padding: 0;
+	font-weight: bold;
+}
+
+.player_img {
+	height: 70px;
+	width: 100px;
+}
+
+.health {
+	font: 10px;
+	margin: 2px;
+	padding: 0;
+	font-weight: bold;
+}
+
+.reset_game {
+	display: none;
+}
+
+#your_enemies {
+	height: 115px;
+	width: 500px;
+	padding: 0;
+}
+
+#defender {
+	height: 115px;
+	width: 150px;
+	padding: 0;
+}
+
+

@@ -1,45 +1,37 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<html>
 <head>
-	<title>Star Wars RPG | Tara Baker</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/javascript" href="assets/css/game.js">
+	<link rel=StyleSheet href="assets/css/style.css" type="text/css">
 </head>
 <body>
-<div class="container">
-	<header>
-		<h1>Star Wars RPG< Game<h1>
-	</header>
-	<secton id="players">
-		<p>Choose a character to play</p>
-			<input clas="person" type="image" src="assets/images/boba-fett.png" alt="Boba Fett"><span class="value"></span>
-			<input clas="person" type="image" src="assets/images/princess-leia.png" alt="Princess Leia">		
-			<input clas="person" type="image" src="assets/images/luke-skywalker.png" alt="Luke Skywalker">	
-			<input clas="person" type="image" src="assets/images/darth-vader.png" alt="Darth Vader">
-	</secton>
+	<div class="game">
+		<h1>Star Wars RPG!</h1>
 
-	<section id="fighter">
-		<h2>Your character</h2>
+		<div id="player1" class="player"><p class="name" id="boba">Boba Fett</p><img class="player_img" src="	assets/images/boba-fett.png"/><p class="health">120</p></div>
 
-	</section>
+		<div id="player2" class="player"><p class="name">Darth Vader</p><img class="player_img" src="assets/images/darth-vader.png"/><p class="health"></p>100</div>
 
-	<section id="enemy">
-		<p>Enemies available to attack</p>
+		<div id="player3" class="player"><p class="name">Luke Skywalker</p><img class="player_img" src="assets/images/luke-skywalker.png"/><p class="health">150</p></div>
+
+		<div id="player4" class="player"><p class="name">Princess Leia</p><img class="player_img" src="assets/images/princess-leia.png"/><p class="health"></p>180</div>
+
+		<h2>Your Character</h2>
+		<h2>Enemies Available to Attack</h2>
+		
+		<div id="your_enemies"></div>
+
+		<h2>Fight Section</h2>
+		
+		<button type="button" class="attack_button" disabled>Attack</button> 
 		<h2>Defender</h2>
-	</section>
+		<div id="defender"></div>
+		<p id="output"></p>
 
-	<section>
-		<p>display wins and losses here</p>
-	</section>
+		<button type="button" class="reset_game" onclick="location.reload();">Play Again</button> 
+	</div>
 
-	<footer>
-		<p>Copyright 2016 Tara Baker</p>
-	</footer>
-
-</div>
-<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-<script src="assets/javascript/game.js"
-</script>
+	<title>Star Wars RPG</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="assets/javascript/game.js"></script>
+	
 </body>
 </html>
